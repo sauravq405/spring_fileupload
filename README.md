@@ -21,14 +21,14 @@ Welcome to the Employee Salaries Management System. Here, you can manage and ana
 
 Here is a brief overview of what you might find in the CSV:
 
-- **Employee ID**: Number
-- **Name**: String
-- **Department**: String
-- **Role**: String
-- **Salary**: Number
-- **City**: String
-- **Education**: String
-- **Joining Date**: Date (dd/MM/yy)
+- **Employee ID**: Unique identifier for each employee.
+- **Name**: Full name of the employee.
+- **Department**: The department within the organization the employee works for.
+- **Role**: The job title or position of the employee.
+- **Salary**: Annual compensation of the employee in local currency.
+- **City**: City where the employee is based or works from.
+- **Education**: Highest level of education completed by the employee.
+- **Joining Date**: The date the employee started working at the company.
 
 ### Download the CSV
 
@@ -66,6 +66,10 @@ curl -X POST -F "file=<your-folder-location>/employee_salaries.csv" http://local
 - **Username:** sa
 - **Password:** (blank)
 
+## SQL query
+```
+SELECT * FROM EMPLOYEE;
+```
 ## API Documentation
 - **Swagger UI:** Access the interactive documentation at http://localhost:8090/swagger-ui/index.html#
 - **OpenAPI JSON:** View the OpenAPI description in JSON format at http://localhost:8090/v3/api-docs
